@@ -18,7 +18,6 @@ const TABS = [
   { id:'vacaciones', label:'Vacaciones', icon:CalIcon    },
   { id:'empleados',  label:'Empleados',  icon:UserIcon   },
   { id:'manual',     label:'Manual',     icon:EditIcon   },
-  { id:'ia',         label:'IA RRHH',    icon:BotIcon    },
   { id:'alertas',    label:'Alertas',    icon:BellIcon   },
 ]
 
@@ -71,8 +70,7 @@ export default function AppAdmin() {
     vacaciones: <VacacionesScreen isAdmin={true} />,
     empleados:  <EmpleadosScreen />,
     manual:     <RegistroManual />,
-    ia:         <AsistenteIA />,
-    alertas:    <AlertsScreen onNotifCount={setNotifCount} />,
+        alertas:    <AlertsScreen onNotifCount={setNotifCount} />,
   }
 
   return (
